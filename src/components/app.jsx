@@ -11,16 +11,12 @@ class App extends Component {
     };
   }
 
-  updateCity = (city) => {
-    this.setState(
-      { activeCity: city }
-    );
-  }
+  updateCity = city => this.setState({ activeCity: city });
 
   render () {
     return (
       <div className="app">
-        <CityList cities={cities} handleClick={this.updateCity} />
+        <CityList cities={cities} updateCity={this.updateCity} />
         <ActiveCity activeCity={this.state.activeCity} />
       </div>
     );

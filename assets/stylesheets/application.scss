@@ -12,13 +12,19 @@ body {
   }
   .active-city {
     width: 70%;
+    height: 90vh;
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+
     h3 {
       margin-top: 0;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -26,4 +32,10 @@ body {
 .list-group-item {
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: aliceblue;
+  color: black;
 }

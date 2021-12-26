@@ -9,6 +9,8 @@ body {
   display: flex;
   .cities {
     width: 30%;
+    height: 90vh;
+    overflow: scroll;
   }
   .active-city {
     width: 70%;

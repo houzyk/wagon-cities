@@ -16,7 +16,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <CityList cities={cities} updateCity={this.updateCity} />
+        <CityList updateCity={this.updateCity} />
         <ActiveCity activeCity={this.state.activeCity} />
       </div>
     );
